@@ -43,6 +43,7 @@
 build/
 Build/
 build-*/
+x64/
 
 # CMake generated files
 CMakeFiles/
@@ -60,6 +61,13 @@ compile_commands.json
 
 # vcpkg
 vcpkg_installed/
+
+# Visual Studio user/local files
+.vs/
+*.vcxproj.user
+
+# Local helper scripts
+tools/
 
 # debug information files
 *.dwo
