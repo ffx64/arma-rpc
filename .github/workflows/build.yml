@@ -1,0 +1,51 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: 'a7edc93a0a4a9af4d42a5b5dc1d50a18a374d6da'
+
+      - name: Cache vcpkg packages
+        uses: actions/cache@v4
+        with:
+          path: vcpkg_installed
+          key: vcpkg-x64-windows-${{ hashFiles('vcpkg.json') }}
+          restore-keys: vcpkg-x64-windows-
+
+      - name: Install dependencies
+        run: vcpkg install --triplet x64-windows
+        env:
+          VCPKG_ROOT: ${{ env.VCPKG_ROOT }}
+
+      - name: Build (Release)
+        run: |
+          msbuild reforger-rpc.sln `
+            /p:Configuration=Release `
+            /p:Platform=x64 `
+            /p:VcpkgEnableManifest=true `
+            /p:VcpkgRoot=$env:VCPKG_ROOT `
+            /m
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: reforger-rpc-x64
+          path: x64/Release/reforger-rpc.exe
+          if-no-files-found: error
