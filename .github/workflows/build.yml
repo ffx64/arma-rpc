@@ -44,6 +44,7 @@ jobs:
           msbuild reforger-rpc.sln `
             /p:Configuration=Release `
             /p:Platform=x64 `
+            /p:PlatformToolset=v143 `
             /p:VcpkgEnableManifest=true `
             /p:VcpkgRoot="${{ github.workspace }}\vcpkg" `
             /m
