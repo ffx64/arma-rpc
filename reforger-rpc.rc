@@ -1,0 +1,36 @@
+#include "resource.h"
+#include <windows.h>
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Matheus (ffx64)"
+            VALUE "FileDescription", "reforger-rpc"
+            VALUE "FileVersion", "1.0.0"
+            VALUE "InternalName", "reforger-rpc.exe"
+            VALUE "LegalCopyright", "Copyright (c) 2026 Matheus (ffx64)"
+            VALUE "OriginalFilename", "reforger-rpc.exe"
+            VALUE "ProductName", "reforger-rpc"
+            VALUE "ProductVersion", "1.0.0"
+            VALUE "Comments", "Uso pessoal e nao comercial; modificacao, redistribuicao e monetizacao somente com autorizacao."
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
