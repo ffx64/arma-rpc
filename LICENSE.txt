@@ -1,0 +1,55 @@
+Restricted Use License - reforger-rpc
+
+Copyright (c) 2026 Matheus (ffx64)
+All rights reserved.
+
+1. Grant of use
+
+The author grants you a limited, revocable, non-exclusive, non-transferable, and
+free license to use this software for personal and non-commercial purposes only.
+
+2. Restrictions
+
+Without the author's prior express written permission, you may not:
+
+- sell, rent, sublicense, charge for access to, or monetize this software;
+- modify, adapt, translate, reverse engineer, or create derivative works based on
+  this software;
+- redistribute, republish, host, package, or include this software in other
+  projects, packages, mods, launchers, installers, or services;
+- remove, hide, or alter authorship, copyright, license, or credit notices;
+- use this software in a way that suggests affiliation with, endorsement by, or
+  official support from the author without permission.
+
+3. Additional permissions
+
+Any permission beyond what is granted by this license must be requested from the
+author and is valid only if granted in advance through express written approval.
+
+4. Intellectual property
+
+This software remains the property of Matheus (ffx64). Nothing in this license
+transfers ownership of the software, source code, brand, project name, or any
+other related right.
+
+5. Revocation
+
+The author may revoke this license for any person or distribution that violates
+these terms. If revoked, you must stop using the software and remove all copies
+under your possession or control.
+
+6. No warranty
+
+This software is provided "as is", without warranties of any kind, express or
+implied, including warranties of operation, compatibility, security, fitness for
+a particular purpose, or absence of errors.
+
+7. Limitation of liability
+
+Under no circumstances shall the author be liable for any direct, indirect,
+incidental, special, consequential, or other damages or losses arising from the
+use, inability to use, unauthorized modification, or distribution of this
+software.
+
+By using this software, you acknowledge that you have read, understood, and agree
+to the terms of this license.
